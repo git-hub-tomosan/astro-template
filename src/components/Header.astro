@@ -1,0 +1,22 @@
+---
+
+---
+
+<header class="border-b border-gray-500">
+  <div class="flex items-center justify-between py-16">
+    <div>
+      <a href="#">Astro Template</a>
+    </div>
+    <nav>
+      <ul class="flex items-center gap-x-8">
+        {
+          ["Home", "About", "Contact"].map((item) => (
+            <li>
+              <a href={`/${item.toLowerCase()}`}>{item}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
